@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Google+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "tertiary-fixed": "#f1dfd4", "surface-container-high": "#2a2a2a", "surface-container": "#1f2020", "secondary-fixed": "#e2e2e4", "outline": "#8e9194", "on-surface-variant": "#c4c7ca", "secondary-fixed-dim": "#c6c6c8", "background": "#131314", "surface-container-low": "#1b1c1c", "on-error": "#690005", "error": "#ffb4ab", "primary-fixed-dim": "#c1c7cc", "surface-bright": "#393939", "surface-tint": "#c1c7cc", "on-primary": "#2b3135", "primary-container": "#c9ced3", "primary-fixed": "#dee3e8", "error-container": "#93000a", "on-primary-fixed": "#161c20", "surface-dim": "#131314", "surface": "#131314", "on-secondary-container": "#b5b5b7", "surface-variant": "#353535", "on-surface": "#e4e2e2", "secondary-container": "#454749", "on-error-container": "#ffdad6", "on-primary-container": "#52585c", "tertiary-fixed-dim": "#d4c3b8", "on-tertiary-fixed": "#231a13", "on-primary-fixed-variant": "#42484b", "inverse-surface": "#e4e2e2", "inverse-primary": "#595f63", "surface-container-lowest": "#0e0e0e", "on-secondary": "#2f3132", "on-tertiary": "#392e27", "surface-container-highest": "#353535", "outline-variant": "#44474a", "on-tertiary-container": "#61544c", "tertiary": "#f8e6db", "on-background": "#e4e2e2", "on-secondary-fixed-variant": "#454749", "tertiary-container": "#dbcabf", "inverse-on-surface": "#303030", "on-tertiary-fixed-variant": "#50453c", "primary": "#e5eaef", "on-secondary-fixed": "#1a1c1d", "secondary": "#c6c6c8" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: {}, fontFamily: { "headline": ["Epilogue"], "display": ["Epilogue"], "body": ["Inter"], "label": ["Google Sans"] }, fontSize: {} } } }</script><style>@layer base { html, body { margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body min-h-screen flex flex-col selection:bg-surface-tint selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-3 min-w-0"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/50 active:scale-95 transition-all" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back_ios_new</span></button><h1 class="text-base font-headline font-semibold tracking-tight text-on-surface truncate">Album Management</h1></div><div class="flex items-center gap-2"><button aria-label="More actions" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/50 active:scale-95 transition-all"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full px-4 pb-12 pt-2 space-y-6">
+<!-- Status / Breadcrumb Notice Bar -->
+<div class="flex items-center justify-between bg-surface-container-low px-4 py-3 rounded-xl shadow-sm">
+<div class="flex items-center gap-2.5 min-w-0">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse shrink-0"></span>
+<span class="text-xs font-label uppercase tracking-wider text-on-surface-variant font-medium truncate">Vault Security Policy</span>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-label font-semibold tracking-wide bg-tertiary-container text-on-tertiary-container shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+      ADMIN ONLY
+    </span>
+</div>
+<!-- Screen Context / Micro Header Info -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<h2 class="font-headline text-xl font-bold tracking-tight text-on-surface">User &amp; Album Access</h2>
+<span class="text-xs font-label px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant font-medium">4 Active Grants</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant leading-relaxed">
+      Configure authorized guests, manage granular access permissions, and provision secure album credentials.
+    </p>
+</div>
+<!-- SECTION 1: Active Shared Users Overview -->
+<div class="flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">group</span>
+<h3 class="font-headline text-sm font-semibold tracking-tight text-on-surface">Active Grants</h3>
+</div>
+<button class="text-xs font-label text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1">
+<span>Sort: Recent</span>
+<span class="material-symbols-outlined text-[14px]">expand_more</span>
+</button>
+</div>
+<!-- User Card 1: Sarah Jenkins -->
+<div class="relative overflow-hidden bg-surface-container rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 group">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Close up warm cinematic portrait photograph of a female photographer named Sarah with soft studio lighting and dark atmospheric tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUuzsQannJ9mvnCSG0IXx4XP2y_e252q48nZP6quAljyWviFR-G6fin1ISvw9ZMH3tZJoQx6qJrbFoZYTSFcNstkcpmAn8glNtbRElzNS2MUoC2lpGM6u2HDlWSAEjgHSXG0oZA7sSz5S-7dfGPNKsk4oYyN_ApVlVdPjpPZe6yQRnrn0vqhH7vFtrk4UTLWjJBsu3kJpRNuiZj-weFfT2DBJ-iHx4L_Yx_BLiOg"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<p class="font-headline text-sm font-semibold text-on-surface truncate">Sarah Jenkins</p>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-label font-medium bg-surface-container-high text-tertiary">Contributor</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant truncate">@sarah.lens <span class="text-outline">#48291</span></p>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Edit grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button aria-label="Revoke grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">person_remove</span>
+</button>
+</div>
+</div>
+<!-- Attached Album Pill -->
+<div class="mt-3.5 pt-3 border-none flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">photo_library</span>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label text-outline leading-tight">Shared Vault</span>
+<span class="text-xs font-body font-medium text-on-surface truncate">Summer in Big Sur</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-label text-on-surface-variant shrink-0 pl-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+          248 RAWs
+        </span>
+</div>
+</div>
+<!-- User Card 2: Marcus Vance -->
+<div class="relative overflow-hidden bg-surface-container rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 group">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Monochrome portrait of an architect and creative director named Marcus in an architectural studio environment with dramatic rim lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuiwX76tKxyEcUx7sjRJjeDzPE9pg21BO3TTenEdfJoZ07rgJrUsOLS09ivZJYQ3Bjtk4PWEgUC6TV78yrZdMA24Av1H_dkzJrnVkdD273X9RqhwBCxhget440Y0PMnEh5ormPpPJ933DTtoiftXFLb-DbK2cMVhcA2B8Hw6G_koHDlV4deB3zxA6ZteOxjBd3qdr2gbtH3siioUy0e13KGpj6TF_g7TBQkSZIvw"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<p class="font-headline text-sm font-semibold text-on-surface truncate">Marcus Vance</p>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-label font-medium bg-surface-container-high text-on-surface-variant">Viewer</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant truncate">@marcus.raw <span class="text-outline">#10293</span></p>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Edit grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button aria-label="Revoke grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">person_remove</span>
+</button>
+</div>
+</div>
+<!-- Attached Album Pill -->
+<div class="mt-3.5 pt-3 border-none flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">architecture</span>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label text-outline leading-tight">Shared Vault</span>
+<span class="text-xs font-body font-medium text-on-surface truncate">Architecture &amp; Leica DNGs</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-label text-on-surface-variant shrink-0 pl-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+          89 RAWs
+        </span>
+</div>
+</div>
+<!-- User Card 3: Elena Rostova -->
+<div class="relative overflow-hidden bg-surface-container rounded-xl p-4 shadow-sm hover:shadow-md transition-all duration-200 group">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3 min-w-0">
+<div class="relative w-11 h-11 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Minimalist high fashion portrait photo of a curator with sharp lighting against deep dark graphite studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZmokq9hvWJ2L5GIjYK6VX6EvnSUU6Ewj8_leQZKsJHvAHw3MlqatSSfb0-PAEKphhbNO_MOtOn8Gd0izXAq7KRZed5ze0GK-b_IZ6TafjASWt8RIxIOgiGNAivk540hmlB97W4ScB4tDLIxH7YjsvD5Ij96G8Qaso3kIgXdj2b37VvoncVDtopFJWoXaU4AHPq1SieL2CpvMrG5f5wtyNiNHlU1a3FkPd-LQg3Q"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<p class="font-headline text-sm font-semibold text-on-surface truncate">Elena Rostova</p>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded text-[10px] font-label font-medium bg-surface-container-high text-on-surface-variant">Reviewer</span>
+</div>
+<p class="font-body text-xs text-on-surface-variant truncate">@elena.curates <span class="text-outline">#90214</span></p>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0">
+<button aria-label="Edit grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-on-surface flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">edit</span>
+</button>
+<button aria-label="Revoke grant" class="w-8 h-8 rounded-lg bg-surface-container-high text-on-surface-variant hover:text-error flex items-center justify-center active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[17px]">person_remove</span>
+</button>
+</div>
+</div>
+<!-- Attached Album Pill -->
+<div class="mt-3.5 pt-3 border-none flex items-center justify-between bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0">folder_shared</span>
+<div class="flex flex-col min-w-0">
+<span class="text-[11px] font-label text-outline leading-tight">Shared Vault</span>
+<span class="text-xs font-body font-medium text-on-surface truncate">Client Deliverables</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] font-label text-on-surface-variant shrink-0 pl-2">
+<span class="w-1.5 h-1.5 rounded-full bg-primary shrink-0"></span>
+          512 Assets
+        </span>
+</div>
+</div>
+</div>
+<!-- SECTION 2: Create New User / Grant Album Access (Form) -->
+<div class="bg-surface-container rounded-xl p-5 shadow-md flex flex-col space-y-5">
+<div class="flex items-start justify-between">
+<div class="flex flex-col space-y-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]">person_add</span>
+<h3 class="font-headline text-base font-semibold text-on-surface">Grant New Album Access</h3>
+</div>
+<p class="font-body text-xs text-on-surface-variant">Provision credentials and map private encryption scope</p>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed-dim/40 ring-4 ring-primary-fixed-dim/10 shrink-0 mt-1"></span>
+</div>
+<form class="flex flex-col space-y-4" id="grantAccessForm">
+<!-- Field 1: User Name -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label text-xs font-medium text-on-surface flex items-center justify-between" for="userName">
+<span>1. User Name</span>
+<span class="text-[11px] text-on-surface-variant">Full name or alias</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px] pointer-events-none">badge</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body text-sm rounded-lg pl-10 pr-3.5 py-3 placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-high transition-all" id="userName" name="userName" placeholder="e.g. Jordan Hayes" required="" type="text"/>
+</div>
+</div>
+<!-- Field 2: User ID -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label text-xs font-medium text-on-surface flex items-center justify-between" for="userId">
+<span>2. User ID</span>
+<span class="text-[11px] text-on-surface-variant">Handle or member ID</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px] pointer-events-none">alternate_email</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body text-sm rounded-lg pl-10 pr-3.5 py-3 placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-high transition-all" id="userId" name="userId" placeholder="e.g. @jordan.studio" required="" type="text"/>
+</div>
+</div>
+<!-- Field 3: Album Selection Dropdown -->
+<div class="flex flex-col space-y-1.5">
+<label class="font-label text-xs font-medium text-on-surface flex items-center justify-between" for="albumSelect">
+<span>3. Album Selection</span>
+<span class="text-[11px] text-on-surface-variant">Access target</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px] pointer-events-none">photo_library</span>
+<select class="w-full bg-surface-container-low text-on-surface font-body text-sm rounded-lg pl-10 pr-10 py-3 appearance-none focus:outline-none focus:bg-surface-container-high transition-all cursor-pointer" id="albumSelect" name="albumSelect" required="">
+<option class="bg-surface-container text-on-surface-variant" disabled="" selected="" value="">Select target album...</option>
+<option class="bg-surface-container text-on-surface" value="summer-big-sur">Summer in Big Sur</option>
+<option class="bg-surface-container text-on-surface" value="portfolio-raws">Portfolio RAWs</option>
+<option class="bg-surface-container text-on-surface" value="family-archives">Family Archives</option>
+<option class="bg-surface-container text-on-surface" value="client-deliverables">Client Deliverables</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 text-on-surface-variant text-[20px] pointer-events-none">unfold_more</span>
+</div>
+</div>
+<!-- Field 4: Password -->
+<div class="flex flex-col space-y-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label text-xs font-medium text-on-surface" for="passwordField">4. Password</label>
+<button class="font-label text-[11px] text-tertiary hover:underline flex items-center gap-1 active:scale-95 transition-all" id="generatePwdBtn" type="button">
+<span class="material-symbols-outlined text-[13px]">autorenew</span>
+            Generate Strong
+          </button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[18px] pointer-events-none">key</span>
+<input class="w-full bg-surface-container-low text-on-surface font-body text-sm rounded-lg pl-10 pr-11 py-3 placeholder:text-outline/70 focus:outline-none focus:bg-surface-container-high transition-all font-mono" id="passwordField" name="password" placeholder="Assign or generate secure key" required="" type="password"/>
+<button aria-label="Toggle password view" class="absolute right-3 text-on-surface-variant hover:text-on-surface p-1 rounded transition-colors" id="togglePwdVisibility" type="button">
+<span class="material-symbols-outlined text-[18px]" id="pwdIcon">visibility</span>
+</button>
+</div>
+</div>
+<!-- Subtle Permission Helper Flag -->
+<div class="flex items-center gap-2 p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant text-xs font-body">
+<span class="material-symbols-outlined text-secondary text-[16px] shrink-0">lock</span>
+<span>Credentials automatically bundle read token with end-to-end checksum verification.</span>
+</div>
+<!-- Submit CTA -->
+<div class="pt-2">
+<button class="w-full py-3.5 px-4 rounded-xl bg-primary text-on-primary font-label text-sm font-semibold tracking-wide flex items-center justify-center gap-2 shadow-md hover:bg-white active:scale-[0.98] transition-all" id="submitAccessBtn" type="submit">
+<span class="material-symbols-outlined text-[19px]">how_to_reg</span>
+<span>Create User &amp; Share Access</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Micro Footer / Security Audit Note -->
+<div class="flex items-center justify-center gap-1.5 pt-2 text-center text-[11px] font-label text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-outline">verified_user</span>
+<span>Changes audited under ISO/IEC 27001 compliance standards</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Generate Random Password Helper
+    const genBtn = document.getElementById('generatePwdBtn');
+    const pwdInput = document.getElementById('passwordField');
+    const toggleBtn = document.getElementById('togglePwdVisibility');
+    const pwdIcon = document.getElementById('pwdIcon');
+    const form = document.getElementById('grantAccessForm');
+
+    if (genBtn && pwdInput) {
+      genBtn.addEventListener('click', () => {
+        const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789!@#$%&*';
+        let res = '';
+        for (let i = 0; i < 14; i++) {
+          res += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        pwdInput.value = res;
+        pwdInput.type = 'text';
+        if (pwdIcon) pwdIcon.textContent = 'visibility_off';
+      });
+    }
+
+    if (toggleBtn && pwdInput && pwdIcon) {
+      toggleBtn.addEventListener('click', () => {
+        if (pwdInput.type === 'password') {
+          pwdInput.type = 'text';
+          pwdIcon.textContent = 'visibility_off';
+        } else {
+          pwdInput.type = 'password';
+          pwdIcon.textContent = 'visibility';
+        }
+      });
+    }
+
+    if (form) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = document.getElementById('submitAccessBtn');
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = `
+            <span class="material-symbols-outlined animate-spin text-[19px]">progress_activity</span>
+            <span>Provisioning Access...</span>
+          `;
+          setTimeout(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[19px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+              <span>Access Granted!</span>
+            `;
+            setTimeout(() => {
+              submitBtn.innerHTML = `
+                <span class="material-symbols-outlined text-[19px]">how_to_reg</span>
+                <span>Create User &amp; Share Access</span>
+              `;
+              form.reset();
+            }, 2000);
+          }, 900);
+        }
+      });
+    }
+  })();
+</script></main></body></html>
