@@ -1,0 +1,244 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_stack" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&amp;family=Google+Sans:wght@400;500;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-variant": "#353535", "primary-container": "#c9ced3", "on-surface-variant": "#c4c7ca", "tertiary": "#f8e6db", "outline-variant": "#44474a", "tertiary-fixed-dim": "#d4c3b8", "surface-dim": "#131314", "surface-container-highest": "#353535", "secondary-fixed": "#e2e2e4", "primary-fixed-dim": "#c1c7cc", "on-error": "#690005", "on-tertiary-fixed": "#231a13", "surface-container-low": "#1b1c1c", "tertiary-container": "#dbcabf", "inverse-primary": "#595f63", "surface-tint": "#c1c7cc", "surface-container": "#1f2020", "inverse-surface": "#e4e2e2", "error": "#ffb4ab", "secondary-fixed-dim": "#c6c6c8", "secondary-container": "#454749", "on-secondary": "#2f3132", "primary-fixed": "#dee3e8", "inverse-on-surface": "#303030", "secondary": "#c6c6c8", "on-secondary-fixed": "#1a1c1d", "primary": "#e5eaef", "on-background": "#e4e2e2", "on-surface": "#e4e2e2", "outline": "#8e9194", "on-tertiary-fixed-variant": "#50453c", "on-tertiary-container": "#61544c", "on-secondary-container": "#b5b5b7", "on-error-container": "#ffdad6", "on-tertiary": "#392e27", "tertiary-fixed": "#f1dfd4", "on-primary-container": "#52585c", "on-primary-fixed": "#161c20", "on-primary-fixed-variant": "#42484b", "surface": "#131314", "surface-container-high": "#2a2a2a", "surface-container-lowest": "#0e0e0e", "on-primary": "#2b3135", "surface-bright": "#393939", "on-secondary-fixed-variant": "#454749", "background": "#131314", "error-container": "#93000a" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: {}, fontFamily: { "headline": ["Epilogue"], "display": ["Epilogue"], "body": ["Inter"], "label": ["Google Sans"] }, fontSize: {} } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#131314;color:#e4e2e2;}.pb-safe{padding-bottom:env(safe-area-inset-bottom, 0px);}.pt-safe{padding-top:env(safe-area-inset-top, 0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body text-on-surface antialiased min-h-screen flex flex-col relative"><header class="fixed top-0 inset-x-0 z-50 bg-surface/70 backdrop-blur-xl pt-safe"><div class="h-16 px-4 flex items-center justify-between"><div class="flex items-center gap-2"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface transition-colors hover:text-primary active:scale-95" onclick="history.back()"><span class="material-symbols-outlined">arrow_back_ios_new</span></button><img alt="Prism Gallery Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAzdhHpH0XPE3pXTTboRAtBm7ixVelCBWvSg9LHx-sn54Y5zTwy_H--gxEsSbdKLJI4VqI0lNSQulKJkQ3INLAvFdTBRxBTE1tO8n8Nr7rKYk9Aup931x2Rl5Qrkn8uLgRsZ8r4ztBlqdxi42BvZPBLBKw6XZo2l68ilKdwKFOmxJI6-YWBN4TlVuGQUYEBJB8D1Oea_KnLEQdgq8qEwwLf-JqwMYElVVxj0C73EYw"><h1 class="text-base font-headline font-semibold tracking-tight text-on-surface ml-1">Settings</h1></div><div class="flex items-center justify-center p-1 rounded-full bg-surface-bright/40 backdrop-blur-md"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPyMkloX1vYukZx0yGTyK2TevlgdoiLVWhACnlkVt5Lz5M_DVL0SfxWpUVfWpclRA-szHdojR04VsxeMkAy51TEGZsBxuqc0hNHRHb8korAUGf1L5_6wz0vMwGqAVhwSbF3bNJa2zANXvDPmRbKXiWRXn8AghtJXknrDjSoBjRfIuLxUUY-kulhQ688bXj91yT3cGu0rSNQm1j8d3yhHnjJLjiMODRpoGBzAXIPA"></div></div></header><main class="flex flex-col relative w-full px-4 pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10 space-y-6">
+<!-- Category Filter / Segment Pills -->
+<div class="flex items-center space-x-2 overflow-x-auto pb-1 pt-1 no-scrollbar">
+<button class="px-4 py-2 rounded-full bg-primary text-on-primary font-label text-sm font-medium shadow-sm transition-transform active:scale-95 flex items-center space-x-1.5 shrink-0">
+<span class="material-symbols-outlined text-[18px]">account_circle</span>
+<span>Profile &amp; Vault</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label text-sm font-medium transition-all active:scale-95 flex items-center space-x-1.5 shrink-0">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Storages</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label text-sm font-medium transition-all active:scale-95 flex items-center space-x-1.5 shrink-0">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Preferences</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label text-sm font-medium transition-all active:scale-95 flex items-center space-x-1.5 shrink-0">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Security</span>
+</button>
+</div>
+<!-- Section 1: Personal Info Card -->
+<section class="space-y-3">
+<div class="flex items-center justify-between px-1">
+<span class="text-xs uppercase tracking-widest font-label font-bold text-on-surface-variant/80">Account Overview</span>
+
+</div>
+<div class="backdrop-blur-xl bg-surface-container/80 rounded-2xl p-5 shadow-lg relative overflow-hidden">
+<!-- Ambient Glow Behind Avatar -->
+<div class="absolute -top-10 -left-10 w-44 h-44 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Avatar & Primary Meta -->
+<div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 relative z-10">
+<div class="relative group">
+<div class="w-24 h-24 rounded-full overflow-hidden p-1 bg-surface-container-highest shadow-inner">
+<img alt="Elena Vance Profile" class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPyMkloX1vYukZx0yGTyK2TevlgdoiLVWhACnlkVt5Lz5M_DVL0SfxWpUVfWpclRA-szHdojR04VsxeMkAy51TEGZsBxuqc0hNHRHb8korAUGf1L5_6wz0vMwGqAVhwSbF3bNJa2zANXvDPmRbKXiWRXn8AghtJXknrDjSoBjRfIuLxUUY-kulhQ688bXj91yT3cGu0rSNQm1j8d3yhHnjJLjiMODRpoGBzAXIPA">
+</div>
+<button aria-label="Edit Profile Picture" class="absolute bottom-0 right-0 p-2 rounded-full backdrop-blur-md bg-surface-bright/90 text-on-surface shadow-md hover:bg-surface-bright active:scale-90 transition-all flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">photo_camera</span>
+</button>
+</div>
+<div class="flex-1 text-center sm:text-left space-y-1.5">
+<div class="flex items-center justify-center sm:justify-start gap-2">
+<h2 class="text-xl font-headline font-semibold text-on-surface tracking-tight">Elena Vance</h2>
+<button aria-label="Edit Profile Name" class="text-on-surface-variant hover:text-primary transition-colors p-1">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+<span class="text-xs font-label text-on-surface-variant font-medium">@elena.lens • ID #849204</span>
+<button aria-label="Copy User ID" class="inline-flex items-center gap-1 text-[11px] font-label px-2 py-0.5 rounded-full bg-surface-container-highest text-primary hover:bg-surface-bright transition-colors active:scale-95" id="copyIdBtn" onclick="copyId()">
+<span class="material-symbols-outlined text-[13px]" id="copyIcon">content_copy</span>
+<span id="copyText">Copy</span>
+</button>
+</div>
+
+</div>
+</div>
+<!-- Security / Change Password Item -->
+<div class="mt-5 pt-4 bg-surface-container-low/60 rounded-xl p-3.5 flex items-center justify-between transition-colors hover:bg-surface-container-high/60 cursor-pointer active:scale-[0.99]">
+<div class="flex items-center space-x-3 min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-lg">lock_reset</span>
+</div>
+<div class="min-w-0">
+<div class="text-sm font-label font-medium text-on-surface truncate">Password &amp; Master Key</div>
+<div class="text-xs font-body text-on-surface-variant truncate">Last modified: Oct 14, 2024 (18 days ago)</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-lg shrink-0 ml-2">chevron_right</span>
+</div>
+</div>
+</section>
+<!-- Section 2: Storages Section -->
+<section class="space-y-3">
+<div class="flex items-center justify-between px-1">
+<span class="text-xs uppercase tracking-widest font-label font-bold text-on-surface-variant/80">Storage Units &amp; Sync</span>
+<span class="text-xs font-label text-on-surface-variant">2 Nodes Connected</span>
+</div>
+<!-- Active Vault Card -->
+<div class="backdrop-blur-xl bg-surface-container/80 rounded-2xl p-5 shadow-lg space-y-4 relative overflow-hidden">
+<!-- Ambient Glow -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-tertiary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center space-x-3">
+<div class="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">cloud_done</span>
+</div>
+<div>
+<h3 class="text-base font-headline font-semibold text-on-surface">Prism Cloud Pro</h3>
+<p class="text-xs font-body text-on-surface-variant">Primary Vault • NVMe Tier-1 Cluster</p>
+</div>
+</div>
+<span class="px-2 py-1 rounded-md text-[11px] font-label font-bold bg-primary text-on-primary shadow-sm tracking-wide">ACTIVE</span>
+</div>
+<!-- Capacity Bar Gauge -->
+<div class="space-y-2 pt-1 relative z-10">
+<div class="flex items-baseline justify-between">
+<div class="text-sm font-headline font-semibold text-on-surface">1.4 TB <span class="text-xs font-body text-on-surface-variant font-normal">used of 2.0 TB</span></div>
+<div class="text-xs font-label font-bold text-primary">70% Filled</div>
+</div>
+<!-- Multi-segment modern track -->
+<div class="w-full h-3 bg-surface-container-highest rounded-full overflow-hidden flex p-0.5 space-x-0.5">
+<div class="h-full bg-primary rounded-l-full" style="width: 42%;" title="Photos: 840 GB"></div>
+<div class="h-full bg-tertiary-fixed-dim" style="width: 26%;" title="Videos: 520 GB"></div>
+<div class="h-full bg-outline" style="width: 2%;" title="System: 40 GB"></div>
+</div>
+<!-- Legend breakdown -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="flex items-center space-x-1.5 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shrink-0"></span>
+<div class="min-w-0">
+<p class="text-[11px] font-label text-on-surface-variant truncate">Photos</p>
+<p class="text-xs font-headline font-medium text-on-surface">840 GB</p>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim shrink-0"></span>
+<div class="min-w-0">
+<p class="text-[11px] font-label text-on-surface-variant truncate">Videos</p>
+<p class="text-xs font-headline font-medium text-on-surface">520 GB</p>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-outline shrink-0"></span>
+<div class="min-w-0">
+<p class="text-[11px] font-label text-on-surface-variant truncate">System/Cache</p>
+<p class="text-xs font-headline font-medium text-on-surface">40 GB</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Local Cache Toggle Sub-card -->
+<div class="pt-3">
+<div class="flex items-center justify-between p-3 rounded-xl bg-surface-container-low/70">
+<div class="flex items-center space-x-3">
+<span class="material-symbols-outlined text-on-surface-variant text-lg">hard_drive</span>
+<div>
+<p class="text-xs font-label font-medium text-on-surface">Intelligent Local Cache</p>
+<p class="text-[11px] font-body text-on-surface-variant">Store high-res proxies for offline edits</p>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:after:bg-on-primary"></div>
+</label>
+</div><div class="mt-2 pt-3 px-3 pb-2 rounded-xl bg-surface-container-low/40 space-y-2.5"><div class="flex items-center justify-between"><div class="flex items-center space-x-1.5"><span class="material-symbols-outlined text-on-surface-variant text-[16px]">folder_data</span><span class="text-xs font-label font-medium text-on-surface">Cache Limit</span></div><span class="text-xs font-label font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded">500 MB</span></div><input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" type="range" min="5" max="100" value="25" step="5"><div class="flex justify-between text-[11px] font-body text-on-surface-variant"><span>100 MB</span><span>500 MB</span><span>1 GB</span><span>2 GB</span></div><p class="text-[11px] font-body text-on-surface-variant/80 pt-0.5">Allocates local device storage to buffer media files.</p></div>
+</div>
+</div>
+<!-- Add Storage Interactive Card -->
+<button class="w-full backdrop-blur-xl bg-surface-container/40 hover:bg-surface-container/70 rounded-2xl p-4 text-center group transition-all duration-200 active:scale-[0.99] flex items-center justify-center space-x-3 shadow-sm">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest group-hover:bg-primary group-hover:text-on-primary text-on-surface flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-lg">add</span>
+</div>
+<div class="text-left">
+<div class="text-sm font-label font-semibold text-on-surface group-hover:text-primary transition-colors">Connect Cloud / NAS Drive</div>
+<div class="text-xs font-body text-on-surface-variant">S3 Compatible, Synology, Google Drive, or WebDAV</div>
+</div>
+</button>
+</section>
+<!-- Section 3: Additional App Preferences -->
+<section class="space-y-3">
+<div class="flex items-center justify-between px-1">
+<span class="text-xs uppercase tracking-widest font-label font-bold text-on-surface-variant/80">Experience &amp; Synchronization</span>
+</div>
+<div class="backdrop-blur-xl bg-surface-container/80 rounded-2xl p-5 shadow-lg space-y-5">
+<!-- Glassmorphism Slider -->
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-base">blur_on</span>
+<span class="text-sm font-label font-medium text-on-surface">Frosted Glass Intensity</span>
+</div>
+<span class="text-xs font-label font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded" id="glassVal">75%</span>
+</div>
+<input class="w-full h-1.5 bg-surface-container-highest rounded-lg appearance-none cursor-pointer accent-primary" id="glassSlider" max="100" min="0" oninput="document.getElementById('glassVal').innerText = this.value + '%'" type="range" value="75">
+<div class="flex justify-between text-[11px] font-body text-on-surface-variant">
+<span>Performance (Opaque)</span>
+<span>Balanced</span>
+<span>Aesthetic (Deep Blur)</span>
+</div>
+</div>
+<!-- OLED Dark Mode Switch -->
+<div class="flex items-center justify-between pt-2">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-base">dark_mode</span>
+</div>
+<div>
+<div class="text-sm font-label font-medium text-on-surface">Pure OLED Mode</div>
+<div class="text-xs font-body text-on-surface-variant">Deep pure #000000 blacks to conserve battery</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+<!-- Auto-Backup Toggle -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-base">sync</span>
+</div>
+<div>
+<div class="text-sm font-label font-medium text-on-surface">Cloud Auto-Backup</div>
+<div class="text-xs font-body text-on-surface-variant">Instant vault sync over Wi-Fi &amp; 5G unmetered</div>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-10 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-on-surface after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary peer-checked:after:bg-on-primary"></div>
+</label>
+</div>
+</div>
+</section>
+<!-- Quick Account Actions Footer -->
+<div class="flex items-center justify-between px-2 pt-2">
+<button class="text-xs font-label font-medium text-on-surface-variant hover:text-on-surface transition-colors flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm">help_outline</span>
+<span>Documentation &amp; Keybase</span>
+</button>
+<button class="text-xs font-label font-semibold text-error hover:underline flex items-center space-x-1">
+<span class="material-symbols-outlined text-sm">logout</span>
+<span>Log Out Session</span>
+</button>
+</div>
+</div>
+<script>
+  function copyId() {
+    navigator.clipboard.writeText("@elena.lens • ID #849204").catch(() => {});
+    const icon = document.getElementById("copyIcon");
+    const text = document.getElementById("copyText");
+    if (icon && text) {
+      icon.innerText = "check";
+      text.innerText = "Copied!";
+      setTimeout(() => {
+        icon.innerText = "content_copy";
+        text.innerText = "Copy";
+      }, 2000);
+    }
+  }
+</script></main>
+
+</body></html>
